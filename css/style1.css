@@ -1,0 +1,133 @@
+main {
+  margin: 50px 100px;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.project-card a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100%;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-card > a > div {
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+.project-card h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.visit-website-container {
+  padding: 1rem;
+  background-color: #fafafa;
+  text-align: center;
+  margin-top: auto;
+  border-top: 1px solid #eee;
+}
+
+.visit-website {
+  display: inline-block;
+  background-color: #007acc;
+  color: #fff;
+  padding: 0.6rem 1.4rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.visit-website:hover {
+  background-color: #005fa3;
+}
+
+@media (max-width: 1024px) {
+  main {
+    margin: 40px 40px;
+  }
+
+  .project-card h4 {
+    font-size: 1.1rem;
+  }
+
+  .project-card p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    margin: 30px 20px;
+  }
+
+  .project-list {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .project-card h4 {
+    font-size: 1.05rem;
+  }
+
+  .visit-website {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    margin: 20px 15px;
+  }
+
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card p {
+    font-size: 0.85rem;
+  }
+
+  .visit-website {
+    font-size: 0.85rem;
+  }
+}

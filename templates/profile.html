@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>My Portfolio</title> <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        :root {
+            --primary-color: #6a0dad;
+            /* vibrant purple */
+            --secondary-color: #ff4081;
+            /* bright pink */
+            --background-gradient-start: #0f2027;
+            --background-gradient-middle: #203a43;
+            --background-gradient-end: #2c5364;
+        }
+
+        body {
+            background: linear-gradient(135deg, var(--background-gradient-start), var(--background-gradient-middle), var(--background-gradient-end));
+            color: #eee;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: rgba(26, 0, 52, 0.85);
+            box-shadow: 0 4px 8px rgba(106, 13, 173, 0.6);
+        }
+
+        header h1 {
+            color: var(--secondary-color);
+            font-weight: 900;
+            letter-spacing: 3px;
+        }
+
+        nav a {
+            color: #d9bbf9;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            color: var(--secondary-color);
+            text-shadow: 0 0 8px var(--secondary-color);
+            outline: none;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 3rem auto 5rem auto;
+            padding: 0 1rem;
+        }
+
+        #hero h2 {
+            color: var(--secondary-color);
+            font-weight: 900;
+            text-shadow: 0 0 12px var(--secondary-color);
+        }
+
+        #hero p {
+            color: #ddd;
+            font-size: 1.25rem;
+        }
+
+        #about img {
+            border: 4px solid var(--secondary-color);
+            box-shadow: 0 0 20px var(--secondary-color);
+        }
+
+        #about p {
+            color: #ccc;
+            font-size: 1.1rem;
+        }
+
+        #projects h3 {
+            color: var(--secondary-color);
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 1.75rem;
+            text-shadow: 0 0 8px var(--secondary-color);
+        }
+
+        .card {
+            background: rgba(255 255 255 / 0.05);
+            border: 1px solid rgba(255 255 255 / 0.15);
+            box-shadow: 0 8px 24px rgb(106 13 173 / 0.25);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 40px rgb(255 64 129 / 0.6);
+            border-color: var(--secondary-color);
+            background: rgba(255 64 129 / 0.15);
+        }
+
+        .card-title,
+        .card-text {
+            color: #eee;
+        }
+
+        .card-footer {
+            background: transparent;
+            border-top: none;
+            text-align: center;
+            padding-bottom: 1rem;
+        }
+
+        .btn-primary {
+            background-color: var(--secondary-color);
+            border: none;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding: 0.5rem 1.5rem;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            text-shadow: 0 0 6px #ff77a9;
+        }
+
+        .btn-primary:hover,
+        .btn-primary:focus {
+            background-color: #ff79b0;
+            box-shadow: 0 0 15px #ff4081;
+            outline: none;
+            color: #fff;
+        }
+
+        #contact h3 {
+            color: var(--secondary-color);
+            font-weight: 900;
+            margin-top: 3rem;
+            text-shadow: 0 0 8px var(--secondary-color);
+        }
+
+        #contact p {
+            color: #ddd;
+            font-size: 1.1rem;
+        }
+
+        .form-control {
+            background: rgba(255 255 255 / 0.1);
+            border: 1px solid rgba(255 255 255 / 0.25);
+            color: #eee;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .form-control:focus {
+            background: rgba(255 255 255 / 0.15);
+            border-color: var(--secondary-color);
+            box-shadow: 0 0 8px var(--secondary-color);
+            color: #fff;
+        }
+
+        label {
+            color: #ddd;
+            font-weight: 600;
+        }
+
+        button.btn-success {
+            background-color: var(--primary-color);
+            border: none;
+            font-weight: 700;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 0 8px var(--primary-color);
+        }
+
+        button.btn-success:hover,
+        button.btn-success:focus {
+            background-color: #7e3cbf;
+            box-shadow: 0 0 15px #6a0dad;
+            outline: none;
+            color: white;
+        }
+
+        /* Responsive tweaks */
+        @media (max-width: 576px) {
+            nav a {
+                display: inline-block;
+                margin: 0 0.5rem 0.5rem 0.5rem;
+            }
+
+            main {
+                margin: 2rem 1rem 3rem 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section id="contact" tabindex="-1" aria-label="Contact me">
+      <h3>Contact Me</h3>
+      <p>If you want to get in touch, send me a message!</p>
+      <form id="contactForm" action="https://formspree.io/f/xnndzwvg" method="POST" aria-live="polite" role="form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required aria-required="true" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email address" required aria-required="true" />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required aria-required="true"></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+</body>
+
+</html>
