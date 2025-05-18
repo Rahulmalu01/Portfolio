@@ -4,44 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rahul's Portfolio Website</title>
+    <link rel="stylesheet" href="/css/style.css">
     <style>
-        * {
-            margin: 0%;
-            padding: 0%;
-        }
-        body {
-            color: white;
-            background-color: blue;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-        nav{
-            background-color: #333;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            height: 60px;
-            font-size: 20px;
-        }
-        nav ul{
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li{
-            list-style: none;
-            margin: 0 23px;
-        }
-        nav ul li a{
-            text-decoration: none;
-            color: white;
-        }
-        nav ul li a:hover{
-            text-decoration: none;
-            color:aquamarine;
-            font-size: 1.3rem;
-        }
-        .leftnav {
-            font-size: 1.5rem;
-        }
         .firstsection{
             display: flex;
             justify-content: space-around;
@@ -58,7 +22,13 @@
             font: 3rem sans-serif;
         }
         .purple{
-            color: aqua;
+            color: rgb(255, 153, 153);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 70px;
+        }
+        #element{
+            color: rgb(255, 153, 153);
+            font-family: Georgia, 'Times New Roman', Times, serif;
         }
     </style>
 </head>
@@ -81,9 +51,9 @@
         <section class="firstsection">
             <div class="leftside">
                 Hi, My Name is 
-                <div><span class="purple">Rahul Malu</span></div>
+                <div><span class="purple"><b>Rahul Malu</b></span></div>
                 <div>And I am passionate</div>
-                 <span id="element"></span>
+                <b><span id="element"></span></b>
             </div>
             <div class="rightside">
                 <img src="/assets/developer.webp" alt="">
