@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <header class="bg-dark text-light p-3 sticky-top">
+        <h1 class="h4">Rahul Malu</h1>
+        <nav>
+            <a href="#hero" class="text-light mx-2">Home</a>
+            <a href="#about" class="text-light mx-2">About</a>
+            <a href="#projects" class="text-light mx-2">Projects</a>
+            <a href="#contact" class="text-light mx-2">Contact</a>
+        </nav>
+    </header>
+    <main class="container mt-4">
+        <section id="hero" class="text-center" tabindex="-1" aria-label="Introduction">
+            <h2>Hello, I'm Rahul Malu</h2>
+            <p>
+                Front-End Developer &amp; UI/UX Designer crafting elegant and
+                user-friendly digital experiences.
+            </p>
+        </section>
+        <section id="about" class="text-center mt-4" tabindex="-1" aria-label="About me">
+            <img src="https://i.pravatar.cc/120?img=12" alt="Photo of Rahul Malu" class="rounded-circle mb-3" />
+            <p>
+                Motivated 2nd-year MIT student skilled in Python and web development.
+                Builds scalable web applications, excels in teamwork and
+                problem-solving, and ensures efficient project execution with strong
+                communication and technical skills.
+            </p>
+        </section>
+
+        <section id="projects" tabindex="-1" aria-label="Projects">
+            <h3 class="text-center mt-4">Some of My Projects</h3>
+            <div class="row mt-3">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <a href="https://github.com/Rahulmalu01/Vehicle_Registration_System" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="https://via.placeholder.com/320x180.png?text=Project+One" class="card-img-top"
+                                alt="Screenshot of Project One" />
+                            <div class="card-body">
+                                <h5 class="card-title">Vehicle Rental System</h5>
+                                <p class="card-text">
+                                    The Vehicle Rental System, built with Django and Bootstrap,
+                                    allows users to manage vehicle data and enables
+                                    administrators to control user accounts and the vehicle
+                                    database.
+                                </p>
+                            </div>
+                        </a>
+                        <div class="card-footer text-center bg-white border-top-0">
+                            <a href="https://vehicle-registration-system-wmkp.onrender.com" target="_blank"
+                                rel="noopener noreferrer" class="btn btn-primary">Visit Website</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <a href="https://github.com/Rahulmalu01/University_Course_Registration_System" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="https://via.placeholder.com/320x180.png?text=Project+Two" class="card-img-top"
+                                alt="Screenshot of Project Two" />
+                            <div class="card-body">
+                                <h5 class="card-title">Student Management System</h5>
+                                <p class="card-text">
+                                    This Student Management System, built with Node.js,
+                                    Express.js, and MySQL, allows administrators to manage
+                                    students and courses, while enabling students to register,
+                                    log in, and enroll in courses.
+                                </p>
+                            </div>
+                        </a>
+                        <div class="card-footer text-center bg-white border-top-0">
+                            <a href="https://github.com/Rahulmalu01/University_Course_Registration_System"
+                                target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visit Website</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <a href="https://github.com/Rahulmalu01/web_games" target="_blank" rel="noopener noreferrer">
+                            <img src="https://via.placeholder.com/320x180.png?text=Project+Three" class="card-img-top"
+                                alt="Screenshot of Project Three" />
+                            <div class="card-body">
+                                <h5 class="card-title">Web Games</h5>
+                                <p class="card-text">
+                                    Explore a collection of fun web-based games.
+                                </p>
+                            </div>
+                        </a>
+                        <div class="card-footer text-center bg-white border-top-0">
+                            <a href="https://github.com/Rahulmalu01/web_games" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-primary">Visit Website</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <a href="https://github.com/Rahulmalu01/Python_Games" target="_blank" rel="noopener noreferrer">
+                            <img src="https://via.placeholder.com/320x180.png?text=Project+Four" class="card-img-top"
+                                alt="Screenshot of Project Four" />
+                            <div class="card-body">
+                                <h5 class="card-title">Python Games</h5>
+                                <p class="card-text">
+                                    Daily life games created in Python to visualize and
+                                    understand the games properly.
+                                </p>
+                            </div>
+                        </a>
+                        <div class="card-footer text-center bg-white border-top-0">
+                            <a href="https://github.com/Rahulmalu01/Python_Games" target="_blank"
+                                rel="noopener noreferrer" class="btn btn-primary">Visit Website</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" tabindex="-1" aria-label="Contact me" class="mt-5">
+            <h3>Contact Me</h3>
+            <p>If you want to get in touch, send me a message!</p>
+            <form id="contactForm" action="https://formspree.io/f/xnndzwvg" method="POST" aria-live="polite"
+                role="form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name" required aria-required="true"
+                        class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email address" required
+                        aria-required="true" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required
+                        aria-required="true" class="form-control"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-success">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

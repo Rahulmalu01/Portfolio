@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul's Portfolio Website</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+        body {
+            color: white;
+            background-color: blue;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        nav{
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 60px;
+            font-size: 20px;
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            text-decoration: none;
+            color:aquamarine;
+            font-size: 1.3rem;
+        }
+        .leftnav {
+            font-size: 1.5rem;
+        }
+        .firstsection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0;
+        }
+        .firstsection > div{
+            width: 35%;
+        }
+        .rightside > img{
+            width: 90%;
+        }
+        .leftside{
+            font: 3rem sans-serif;
+        }
+        .purple{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="leftnav">Rahul's Portfolio</div>
+            <div class="rightnav">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftside">
+                Hi, My Name is 
+                <div><span class="purple">Rahul Malu</span></div>
+                <div>And I am passionate</div>
+                 <span id="element"></span>
+            </div>
+            <div class="rightside">
+                <img src="/assets/developer.webp" alt="">
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+        strings: ['Cloud Engineer','Web Developer', 'App Developer','Web Designer'],
+        typeSpeed: 50,
+        backSpeed: 30,
+        backDelay: 1500,
+        startDelay: 500,
+        loop: true,
+        });
+    </script>
+</body>
+</html>
