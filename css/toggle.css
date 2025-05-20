@@ -28,6 +28,14 @@ body.light-mode .rightnav ul li a {
   transition: color 0.6s ease;
 }
 
+body.light-mode .purple{
+  color: rgb(71, 102, 255);
+}
+
+body.light-mode #element{
+  color: rgb(71, 102, 255);
+}
+
 body.light-mode .project-card {
   display: flex;
   flex-direction: column;
