@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <button class="toggle-theme" onclick="toggleTheme()">Toggle Theme</button>
+    <header>
+        <nav>
+            <div class="leftnav">Rahul's Portfolio</div>
+            <div class="rightnav">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/templates/about.html">About</a></li>
+                    <li><a href="/templates/services.html">Services</a></li>
+                    <li><a href="/templates/project.html">Projects</a></li>
+                    <li><a href="/templates/contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>
+    <section id="contact" tabindex="-1" aria-label="Contact me">
+      <h3>Contact Me</h3>
+      <p>If you want to get in touch, send me a message!</p>
+      <form id="contactForm" action="https://formspree.io/f/xnndzwvg" method="POST" aria-live="polite" role="form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required aria-required="true" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email address" required aria-required="true" />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required aria-required="true"></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+    <script>
+        function toggleMenu() {
+            document.getElementById('nav-links').classList.toggle('active');
+        }
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+        }
+        AOS.init();
+    </script>
+</body>
+
+</html>

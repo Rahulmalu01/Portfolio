@@ -8,20 +8,22 @@
   <link rel="stylesheet" href="/css/style1.css">
 </head>
 <body>
+  <button class="toggle-theme" onclick="toggleTheme()">Toggle Theme</button>
   <header>
-      <nav>
-        <div class="leftnav">Rahul's Portfolio</div>
-        <div class="rightnav">
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">About</a></li>
-            <li><a href="/">Services</a></li>
-            <li><a href="/">Projects</a></li>
-            <li><a href="/">Contact Me</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+    <nav>
+      <div class="leftnav">Rahul's Portfolio</div>
+      <div class="rightnav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/templates/about.html">About</a></li>
+          <li><a href="/templates/services.html">Services</a></li>
+          <li><a href="/templates/project.html">Projects</a></li>
+          <li><a href="/templates/contact.html">Contact Me</a></li>
+        </ul>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </nav>
+  </header>
   <main>
     <section id="projects" tabindex="-1" aria-label="Projects">
       <h3>Some of My Projects</h3>
@@ -91,5 +93,10 @@
       </div>
     </section>
   </main>
+  <script>
+    function toggleMenu() {document.getElementById('nav-links').classList.toggle('active');}
+    function toggleTheme() {document.body.classList.toggle('light-mode');}
+    AOS.init();
+  </script>
 </body>
 </html>
