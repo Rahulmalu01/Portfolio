@@ -1,0 +1,58 @@
+/* Light Theme */
+.light-theme {
+  background-color: #f9f9f9;
+  color: #111;
+}
+
+.light-theme nav {
+  background: linear-gradient(to right, #e0e0e0, #f5f5f5);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.light-theme .leftnav {
+  color: #800080;
+}
+
+.light-theme .rightnav ul li a {
+  color: #0056b3;
+}
+
+.light-theme .rightnav ul li a:hover {
+  color: #1a8917;
+}
+
+.light-theme .rightnav ul {
+  background-color: #f0f0f0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.light-theme .hamburger {
+  color: #333;
+}
+
+.light-theme .project-card {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+}
+
+.light-theme .project-card h4 {
+  color: #222;
+}
+
+.light-theme .project-card p {
+  color: #444;
+}
+
+.light-theme .visit-website-container {
+  background-color: #f0f0f0;
+  border-top: 1px solid #ccc;
+}
+
+.light-theme .visit-website {
+  background-color: #0056b3;
+}
+
+.light-theme .visit-website:hover {
+  background-color: #003f86;
+}

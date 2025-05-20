@@ -1,0 +1,108 @@
+#contact {
+  padding: 60px 20px;
+  background-color: #1e1e3f;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+#contact h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #ffcece;
+}
+
+#contact p {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+#contactForm {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contactForm label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+#contactForm input,
+#contactForm textarea {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  resize: vertical;
+  background-color: #fff;
+  color: #000;
+  transition: border-color 0.3s ease;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+  border-color: #00c3ff;
+  outline: none;
+}
+
+#contactForm button {
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #00c3ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contactForm button:hover {
+  background-color: #0093c4;
+}
+
+/* Light Mode Support */
+body.light-mode #contact {
+  background-color: #f7f7f7;
+  color: #222;
+}
+
+body.light-mode #contact p {
+  color: #555;
+}
+
+body.light-mode #contact h3 {
+  color: #222;
+}
+
+body.light-mode #contactForm input,
+body.light-mode #contactForm textarea {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #bbb;
+}
+
+body.light-mode #contactForm button {
+  background-color: #007acc;
+}
+
+body.light-mode #contactForm button:hover {
+  background-color: #005fa3;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  #contactForm {
+    padding: 0 10px;
+  }
+
+  #contact h3 {
+    font-size: 1.5rem;
+  }
+}
