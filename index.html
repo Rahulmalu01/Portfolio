@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rahul's Portfolio Website</title>
-    <link rel="stylesheet" href="/css/style.css">
     <link href="/css/unpkg_aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/toggle.css">
+    <link rel="stylesheet" href="/css/style.css">
     <style>
         .firstsection{
             display: flex;
@@ -34,19 +35,19 @@
     </style>
 </head>
 <body>
-    <button class="toggle-theme" onclick="toggleTheme()">Toggle Theme</button>
     <header>
         <nav>
             <div class="leftnav">Rahul's Portfolio</div>
             <div class="rightnav">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/templates/about.html">About</a></li>
-                    <li><a href="/templates/services.html">Services</a></li>
-                    <li><a href="/templates/project.html">Projects</a></li>
-                    <li><a href="/templates/contact.html">Contact Me</a></li>
-                </ul>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/templates/about.html">About</a></li>
+                <li><a href="/templates/services.html">Services</a></li>
+                <li><a href="/templates/project.html">Projects</a></li>
+                <li><a href="/templates/contact.html">Contact Me</a></li>
+            </ul>
             </div>
+            <button class="toggle-theme" onclick="toggleTheme(this)">Toggle Theme</button>
             <div class="hamburger" onclick="toggleMenu()">☰</div>
         </nav>
     </header>
@@ -64,7 +65,6 @@
         </section>
     </main>
     <script src="/js/typed_umd.js"></script>
-    <script src="/js/unpkg_aos.js"></script>
     <script>
         var typed = new Typed('#element', {
         strings: ['Cloud Engineer','Web Developer', 'App Developer','Web Designer'],

@@ -1,58 +1,114 @@
-/* Light Theme */
-.light-theme {
-  background-color: #f9f9f9;
-  color: #111;
-}
-
-.light-theme nav {
-  background: linear-gradient(to right, #e0e0e0, #f5f5f5);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.light-theme .leftnav {
-  color: #800080;
-}
-
-.light-theme .rightnav ul li a {
-  color: #0056b3;
-}
-
-.light-theme .rightnav ul li a:hover {
-  color: #1a8917;
-}
-
-.light-theme .rightnav ul {
-  background-color: #f0f0f0;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-.light-theme .hamburger {
-  color: #333;
-}
-
-.light-theme .project-card {
-  background-color: #fff;
-  color: #000;
-  border: 1px solid #ccc;
-}
-
-.light-theme .project-card h4 {
+/* Light mode page styles */
+body.light-mode {
+  background: linear-gradient(135deg, #f4f4f4, #facaca, #f5daab); /* Light multi-color gradient */
   color: #222;
+  transition: background 0.6s ease, color 0.6s ease;
 }
 
-.light-theme .project-card p {
-  color: #444;
+/* Light mode styles for project cards, nav, links etc. */
+body.light-mode .project-card {
+  background-color: #ffffff; /* White background for light mode */
+  color: #000;
+  transition: background 0.6s ease, color 0.6s ease;
+  border: 1px solid #ddd; /* Light border for cards */
 }
 
-.light-theme .visit-website-container {
-  background-color: #f0f0f0;
-  border-top: 1px solid #ccc;
+body.light-mode nav {
+  background-color: #ddd; /* Light nav background */
+  transition: background 0.6s ease;
 }
 
-.light-theme .visit-website {
-  background-color: #0056b3;
+body.light-mode .leftnav {
+  color: #000;
+  transition: color 0.6s ease;
 }
 
-.light-theme .visit-website:hover {
-  background-color: #003f86;
+body.light-mode .rightnav ul li a {
+  color: #000;
+  transition: color 0.6s ease;
+}
+
+body.light-mode .project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #000000;
+  border: 1px solid #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 100%;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+}
+
+body.light-mode .project-card h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #dedede;
+}
+
+body.light-mode .project-card p {
+  font-size: 0.95rem;
+  color: #b3b3b3;
+}
+
+/* Toggle button base style */
+.toggle-theme {
+  top: 12px;
+  right: 20px;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  user-select: none;
+  z-index: 1100;
+  transition: all 0.4s ease;
+  box-shadow: none;
+  color: #eee;
+  background-color: #222; /* Dark button style */
+  text-shadow: none;
+}
+
+/* Hover effect for toggle button (dark mode) */
+.toggle-theme:hover {
+  background-color: #444;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
+}
+
+/* Hover effect when active (light mode) */
+.toggle-theme.active:hover {
+  box-shadow:
+    0 0 25px rgba(255, 110, 196, 1),
+    0 0 40px rgba(120, 115, 245, 0.9),
+    0 0 55px rgba(74, 222, 128, 0.85),
+    0 0 70px rgba(250, 204, 21, 0.75),
+    0 0 85px rgba(251, 113, 133, 0.7);
+}
+
+/* Gradient animation */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Additional styles for buttons */
+.btn {
+  border-radius: 25px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .toggle-theme {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
 }

@@ -1,3 +1,4 @@
-function toggleMenu() {document.getElementById('navLinks').classList.toggle('active');}
-function toggleTheme() {document.body.classList.toggle('light-mode');}
-AOS.init();
+function toggleTheme(button) {
+  document.body.classList.toggle('light-mode');  // toggle page theme
+  button.classList.toggle('active');              // toggle button style
+}

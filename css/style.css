@@ -6,8 +6,9 @@
 
 body {
   color: white;
-  background-color: rgb(9, 9, 66);
+  background: linear-gradient(135deg, #090966, #6a0dad, #ff4081);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  transition: background 0.6s ease, color 0.6s ease;
   line-height: 1.7rem;
 }
 
@@ -162,38 +163,8 @@ nav {
   background-color: #005fa3;
 }
 
-.toggle-theme {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #280556;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 8px;
-  cursor: pointer;
-  z-index: 1001;
-  font-size: 16px;
-  border: none;
-}
-
-body.light-mode {
-  background-color: #f4f4f4;
-  color: #222;
-}
-
-body.light-mode .project-card {
-  background-color: #fff;
-  color: #000;
-}
-
-body.light-mode nav {
-  background-color: #ddd;
-}
-
-body.light-mode .leftnav {
-  color: #000;
-}
-
-body.light-mode .rightnav ul li a {
-  color: #000;
+.heading{
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 3rem;
 }
