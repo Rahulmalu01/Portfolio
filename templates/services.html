@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sevrives Provided</title>
-  <link rel="stylesheet" href="/Portfolio/css/style.css">
-  <link rel="stylesheet" href="/Portfolio/css/toggle.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services Provided</title>
+  <link rel="stylesheet" href="/Portfolio/css/style.css" />
+  <link rel="stylesheet" href="/Portfolio/css/toggle.css" />
+  <link rel="stylesheet" href="/Portfolio/css/services.css" />
 </head>
 <body>
   <header>
@@ -15,7 +16,7 @@
         <ul>
           <li><a href="/Portfolio">Home</a></li>
           <li><a href="/Portfolio/templates/about.html">About</a></li>
-          <li><a href="/Portfolio/templates/services.html">Services</a></li>
+          <li><a href="/Portfolio/templates/services.html" class="active">Services</a></li>
           <li><a href="/Portfolio/templates/project.html">Projects</a></li>
           <li><a href="/Portfolio/templates/contact.html">Contact Me</a></li>
         </ul>
@@ -24,6 +25,37 @@
       <div class="hamburger" onclick="toggleMenu()">☰</div>
     </nav>
   </header>
+
+  <main>
+    <section class="services-section">
+      <div class="container">
+        <h1>Services I Provide</h1>
+        <div class="service-list">
+          <div class="service-card">
+            <img src="/Portfolio/assets/services/Website_Development.jpg" alt="Web Development" height="400" width="250">
+            <h2>Website Development</h2>
+            <p>I build modern, responsive websites using Django and Bootstrap for individuals and businesses.</p>
+          </div>
+          <div class="service-card">
+            <img src="/Portfolio/assets/services/web-development.jpg" alt="Web Application" height="400" width="250">
+            <h2>Web Application Creation</h2>
+            <p>From idea to deployment, I create full-stack web applications tailored to your needs using Python, Django, and JavaScript.</p>
+          </div>
+          <div class="service-card">
+            <img src="/Portfolio/assets/services/Cloud-Integration.png" alt="Cloud Integration" height="400" width="250">
+            <h2>Cloud Integration</h2>
+            <p>I integrate AWS cloud services for backend storage, databases, and deployment to ensure scalability and performance.</p>
+          </div>
+        </div>
+
+        <div class="github-link">
+          <h3>Check Out My Work:</h3>
+          <p><a href="https://github.com/Rahulmalu01?tab=repositories" target="_blank">GitHub Profile</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
   <script src="/Portfolio/js/toggle.js"></script>
 </body>
 </html>

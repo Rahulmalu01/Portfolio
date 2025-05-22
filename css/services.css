@@ -1,0 +1,79 @@
+/* Dark Theme - Services Page */
+
+:root {
+  --bg-dark: #121212;
+  --text-light: #e0e0e0;
+  --card-dark: #1e1e1e;
+  --accent-color: #4fc3f7;
+  --shadow-dark: rgba(255, 255, 255, 0.05);
+}
+
+.services-section {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  padding: 2rem;
+}
+
+.services-section h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--accent-color);
+  margin-bottom: 2rem;
+}
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.service-card {
+  background-color: var(--card-dark);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px var(--shadow-dark);
+  flex: 1 1 300px;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  background-color: #220066;
+}
+
+.service-card h2 {
+  font-size: 1.5rem;
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+}
+
+.service-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.github-link {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.github-link h3 {
+  font-size: 1.3rem;
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+}
+
+.github-link a {
+  color: var(--text-light);
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.service-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
